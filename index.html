@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final 03</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Form</h1>
+        <form id="travelForm">
+            <label for="region">Region:</label>
+            <select id="region" name="region" required>
+                <option value="" disabled selected>Select</option>
+                <option value="North">North</option>
+                <option value="South">South</option>
+            </select>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Trujillo">Trujillo</option>
+                <option value="Tacna">Tacna</option>
+            </select>
+
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Peruvian">Peruvian</option>
+                <option value="Mexican">Mexican</option>
+            </select>
+
+            <label for="passengerCount">Number of Passengers:</label>
+            <input type="number" id="passengerCount" name="passengerCount" min="30" max="60" required>
+
+            <div id="agesContainer"></div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
